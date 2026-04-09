@@ -9,7 +9,13 @@ cask "climeter" do
 
   depends_on macos: ">= :sonoma"
 
-  app "Climeter.app", no_quarantine: true
+  app "Climeter.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/Climeter.app"],
+                   sudo: false
+  end
 
   zap trash: [
     "~/Library/Logs/Climeter",
