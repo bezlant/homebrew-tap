@@ -1,6 +1,6 @@
 cask "climeter" do
-  version "1.0.8"
-  sha256 "c3cee119df325e9cfe0c47cd868031c6dfaf6d19a2411a88691606ab03d06f13"
+  version "1.0.9"
+  sha256 "934dc499611970ec9bdb1ff964e9e7fc4ad9c3d9a930b2335a335c5ecf1ca40a"
 
   url "https://github.com/bezlant/cliMeter/releases/download/v#{version}/Climeter.zip"
   name "cliMeter"
@@ -13,8 +13,8 @@ cask "climeter" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-d", "com.apple.quarantine", "#{appdir}/Climeter.app"],
-                   sudo: false
+         args: ["-d", "com.apple.quarantine", "#{appdir}/Climeter.app"],
+         sudo: false
   end
 
   zap trash: [
