@@ -9,7 +9,7 @@ cask "climeter" do
 
   depends_on macos: ">= :sonoma"
 
-  app "Climeter.app"
+  app "Climeter.app", no_quarantine: true
 
   zap trash: [
     "~/Library/Logs/Climeter",
