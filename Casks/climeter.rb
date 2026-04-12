@@ -1,6 +1,6 @@
 cask "climeter" do
-  version "1.0.11"
-  sha256 "df7d14a02019c49b3046fa65f391544ba00d99f84de769d6544f85ad1cc13ce1"
+  version "1.0.12"
+  sha256 "af313680fc35b81209e1f0708cbc55971301649fa4c71065215d2b2f23449ab5"
 
   url "https://github.com/bezlant/cliMeter/releases/download/v#{version}/Climeter.zip"
   name "cliMeter"
