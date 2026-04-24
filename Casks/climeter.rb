@@ -1,10 +1,10 @@
 cask "climeter" do
-  version "1.0.12"
-  sha256 "af313680fc35b81209e1f0708cbc55971301649fa4c71065215d2b2f23449ab5"
+  version "1.0.13"
+  sha256 "852f59d3bd6ab7ca6e0677b98bb2843f612b1a1b87a68f3b3deee90066ccd5d1"
 
   url "https://github.com/bezlant/cliMeter/releases/download/v#{version}/Climeter.zip"
   name "cliMeter"
-  desc "macOS menu bar app for tracking Claude Code API usage"
+  desc "macOS menu bar app for tracking Claude Code and Codex usage"
   homepage "https://github.com/bezlant/cliMeter"
 
   depends_on macos: ">= :sonoma"
