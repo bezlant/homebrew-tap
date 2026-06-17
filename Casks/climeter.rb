@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "climeter" do
-  version "1.0.19"
-  sha256 "399a2a01249a53086dd634d7128ecfa9cdb969738e5b53850d5becbfb533831e"
+  version "1.0.20"
+  sha256 "f55b03c0d48834d6d493d55e24d87c7baded94978472af5831cf0c9b7d139775"
 
   url "https://github.com/bezlant/cliMeter/releases/download/v#{version}/Climeter.zip"
   name "cliMeter"
@@ -12,12 +12,6 @@ cask "climeter" do
   depends_on macos: :sonoma
 
   app "Climeter.app"
-
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-d", "com.apple.quarantine", "#{appdir}/Climeter.app"],
-                   sudo: false
-  end
 
   zap trash: "~/Library/Logs/Climeter"
 end
