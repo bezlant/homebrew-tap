@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 cask "climeter" do
-  version "1.0.23"
-  sha256 "b6683b8e39fd6ee39c43bac9d1c65d4a9ef57d7d7cf9280bc131d77c881290ce"
+  version "1.0.24"
+  sha256 "27d93319f8b51eed113c61c824b88a8fd18ba70a604b86f466b8bc0e4d9a6df0"
 
   url "https://github.com/bezlant/cliMeter/releases/download/v#{version}/Climeter.zip"
   name "cliMeter"
